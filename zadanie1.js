@@ -33,7 +33,7 @@ const profNode = studentNode[i]?.querySelector('prof');
 const langAttr = nameNode?.getAttribute('lang');
 
 const result = {
-    name: `${firstNode?.textContent} ` + `${secondNode?.textContent}`,
+    name: `${firstNode?.textContent} ${secondNode?.textContent}`,
     age: ageNode?.textContent,
     prof: profNode?.textContent,
     lang: langAttr
@@ -41,3 +41,7 @@ const result = {
 arr.push(result)
 }
 console.log(arr)
+
+// Задание выполнено верно, есть пара комментариев:
+// 1. Шаблонную строку можно (и нужно :)) использовать без конкатенации (сложения строк с помощью плюса). Выше исправила на более правильный варинат
+// 2. Не совсем поняла, для чего используются знаки вопроса после некоторых переменных, например studentNode[i]?
